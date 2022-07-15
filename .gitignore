@@ -1,1 +1,9 @@
+.idea/*
 /.idea/*
+
+
+.env
+**/logs
+
+t1-data-pipeline/airflow/logs/*
+t1-data-pipeline/airflow/plugins/*
