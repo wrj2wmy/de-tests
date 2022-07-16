@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    // The timestamp must be 0, otherwise the API will return all the records from 2020-01-01
     const start = new Date(2022,1,1,);
     start.setHours(0, 0, 0, 0);
     const end = new Date();
@@ -25,7 +26,6 @@ export class AppComponent {
         this.data.forEach(
           (d: any) => d.Date = d.Date.split('T')[0]
         );
-        console.log(this.data);
         const columnPlot = new Column('container',  {
           data: this.data,
           xField: 'Date',
@@ -35,8 +35,5 @@ export class AppComponent {
         columnPlot.render();
       }
     );
-
-
-    // Called after the constructor and called  after the first ngOnChanges()
   }
 }
