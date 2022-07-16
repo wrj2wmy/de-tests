@@ -35,11 +35,11 @@ def transform_data(file):
     df.to_csv(destination_file, index=False)
     return 'Done'
 
-
+# Daily after 1am
 with DAG(
         dag_id='de-test-1',
-        start_date=datetime(2022, 5, 28),
-        schedule_interval=None) as dag:
+        start_date=datetime(2022, 7, 15),
+        schedule_interval='30 1 * * *') as dag:
     import glob
 
     index = 0
@@ -61,6 +61,6 @@ with DAG(
 
         start_task >> transform_task >> end_task
 
-
+# Local testing
 if __name__ == "__main__":
     transform_data('../source/dataset2.csv')
