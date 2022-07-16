@@ -8,9 +8,9 @@ Set the variables in `sql/fill_tables.sql`
 | Parameter | Description |
 | ------ | ------ |
 | number_of_sales | Number of rows to create in the table sale |
-| number_of_customers | Number of rows to create in the table users |
-| number_of_cars | Number of rows to create in the table product |
-| number_of_salespersons | Number of rows to create in the table store |
+| number_of_customers | Number of rows to create in the table customer |
+| number_of_cars | Number of rows to create in the table car |
+| number_of_salespersons | Number of rows to create in the table salesperson |
 | start_date | Date of the first sale |
 | end_date | Date of the last sale |
 
@@ -28,3 +28,6 @@ In this test, use the port **5438** on the host machine |
 ```sh
 $ docker-compose up
 ```
+
+## Answer
+The query for the test can be found under `sql/query_sales.sql`
