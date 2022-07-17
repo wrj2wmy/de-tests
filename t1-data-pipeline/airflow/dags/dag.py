@@ -55,6 +55,14 @@ with DAG(
             dag=dag,
         )
 
+        # Move original file to folder to avoid processing same file multiple times
+        #end_task = BashOperator(
+        #    task_id=f'end_{index}',
+        #    bash_command=f'mv {f} /opt/airflow/source/origin',
+        #    dag=dag
+        #)
+
+        # Do nothing just for show case
         end_task = EmptyOperator(
             task_id=f'end_{index}'
         )
