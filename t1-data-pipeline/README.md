@@ -25,3 +25,11 @@ Step 5: Create a new field named `above_100`, which is `true` if the price is st
 Step 6: Write into destination
 
 Step 7: housekeeping, delete or move original files to different location
+
+## Start Airflow
+
+```bash
+docker-compose up
+```
+
+DAG is scheduled at 1:30 AM daily.

@@ -41,6 +41,9 @@ Processing tasks:
 
 _Note: please submit the processed dataset too._
 
+[Answer for test 1](https://github.com/wrj2wmy/de-tests/tree/main/t1-data-pipeline)
+
+
 ## Section 2: Databases
 
 You are appointed by a car dealership to create their database infrastructure. There is only one store. In each business day, cars are being sold by a team of salespersons. Each transaction would contain information on the date and time of transaction, customer transacted with, and the car that was sold.
@@ -71,6 +74,8 @@ Your team also needs you to query some information from the database that you ha
 
 2. I want to find out the top 3 car manufacturers that customers bought by sales (quantity) and the sales number for it in the current month.
 
+[Answer for test 2](https://github.com/wrj2wmy/de-tests/tree/main/t2-database)
+
 ## Section 3: System Design
 
 Prepare a presentation to your project team on how you plan to design data infrastructure on the cloud for a company whose main business is in processing images. Your role is the `Tech Lead` for this project.
@@ -83,6 +88,8 @@ Produce a system architecture diagram (e.g. Visio, Powerpoint) using any of the 
 
 Share about the `pros` and `cons` of your design to justify the decisions you have made.
 
+[Answer for test 3](https://github.com/wrj2wmy/de-tests/tree/main/t3-system-design)
+
 ## Section 4: Charts and APIs
 
 Your team decided to design a dashboard to display the statistic of COVID19 cases. You are tasked to display one of the components of the dashboard which is to display a visualisation representation of number of COVID19 cases in Singapore over time.
@@ -93,6 +100,8 @@ Display a graph to show the number cases in Singapore over time using the APIs f
 
 _Note: please submit screenshots of the dashboard_
 
+[Answer for test 4](https://github.com/wrj2wmy/de-tests/tree/main/t4-charts-apis)
+
 ## Section 5: Machine Learning
 
 Using the dataset from https://archive.ics.uci.edu/ml/datasets/Car+Evaluation, create a machine learning model to predict the buying price given the following parameters:
@@ -102,3 +111,5 @@ Using the dataset from https://archive.ics.uci.edu/ml/datasets/Car+Evaluation, c
 - Lug Boot Size = Big
 - Safety = High
 - Class Value = Good
+
+[Answer for test 5](https://github.com/wrj2wmy/de-tests/tree/main/t5-machine-learning)
