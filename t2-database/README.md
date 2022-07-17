@@ -25,8 +25,23 @@ If want change this params in `docker-compose.yaml`
 In this test, use the port **5438** on the host machine |
 
 ## Run
-```sh
-$ docker-compose up
+
+### Docker compose
+
+```bash
+docker-compose up
+```
+
+### Docker file
+
+```bash
+docker build -t postgres-db ./
+docker run -d --name postgresdb-container -p 5438:5432 postgres-db
+```
+
+In case you want to remove the image:
+```bash
+docker image rm 'nameOfTheImage'
 ```
 
 ## Answer
