@@ -1,28 +1,27 @@
-# Data Pipe Line
+## Data Pipe Line
 
-Step 1: Extract data
+Simple DAG as below:
 
-|   name    |    price     | 
-|:----------|--------------|
-| William Dixon |  109.0372796 |
+<img alt="DAG" src="./img/DAG.png">
 
-Step 2: Transform - Split `name` column into `first_name` and `last_name`
+Step 1: Strip Empty Name rows
+
+Step 2: Split `name` column into `first_name` and `last_name`
 
 |first_name | last_name |    price     | 
 |:----------|:----------|--------------|
 | William   | Dixon     |  109.0372796 |
 
-Step 3: Transform - Data Cleaning
+Step 3: Remove salutation from first name column
 
-- Remove any zeros prepended to the `price` field
-- Delete any rows which do not have a `name`
+Step 4: Remove any zeros prepended to the `price` field
 
-Step 4: Transform 
-
-- Create a new field named `above_100`, which is `true` if the price is strictly greater than 100
+Step 5: Create a new field named `above_100`, which is `true` if the price is strictly greater than 100
 
 |first_name | last_name |    price     | above_100  |
 |:----------|:----------|--------------|:----------:|
 | William   | Dixon     |  109.0372796 | true       |
 
-Step 5: Load into destination
+Step 6: Write into destination
+
+Step 7: housekeeping, delete or move original files to different location
