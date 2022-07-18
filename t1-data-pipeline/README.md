@@ -33,3 +33,7 @@ docker-compose up
 ```
 
 DAG is scheduled at 1:30 AM daily.
+
+Source datasets are located at `source` directory.
+Once processed, the output will be generated under `source\processed` directory.
+The original file will be moved to `source\origin` directory or to be removed depends on the archival requirement.
